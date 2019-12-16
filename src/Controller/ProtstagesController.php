@@ -15,7 +15,8 @@ class ProtstagesController extends AbstractController
     }
 	
 	    public function entreprises(){
-        return new Response("<html><body><h1>Cette page affichera la liste des entreprises proposant un stage</h1></body></html>");
+            return $this->render('protstages/entreprises.html.twig',['controller_name' => 'ProstageController',]);    
+        //return new Response("<html><body><h1>Cette page affichera la liste des entreprises proposant un stage</h1></body></html>");
     }
 	
 		public function formations(){

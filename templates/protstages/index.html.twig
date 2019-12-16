@@ -1,14 +1,66 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Prostages{% endblock %}
+{% block title %}
+{% endblock %}
+
+{% block titre %}
+Prostages
+{% endblock %}
 
 {% block contenu %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<p>Recherche d'un Stagiaire dans le domaine de l'informatique ---  détails</p>
-
-    
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-3">
+						<img class="card-img-top" style="height: 10rem;" alt="Bootstrap Thumbnail First" src="Ubisoft.jpg" />
+						<div class="card-block">
+							<h5 class="card-title">
+								Ubisoft
+							</h5>
+							<p class="card-text">
+							Notre entreprise vous propose de ....</p>
+							<p>
+								<a class="btn btn-primary" href="#">Consulter</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-3">
+						<img class="card-img-top" style="height: 10rem;" alt="Bootstrap Thumbnail Second" src="https://www.layoutit.com/img/city-q-c-600-200-1.jpg" />
+						<div class="card-block">
+							<h5 class="card-title">
+								Master Informatique avancé
+							</h5>
+							<p class="card-text">
+								Bonjour viens dans notre formation, on te paye si tu veux
+							</p>
+							<p>
+								<a class="btn btn-primary" href="">Consulter</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-3">
+						<img class="card-img-top" style="height: 10rem;" alt="Bootstrap Thumbnail Third" src="Amazon.png" />
+						<div class="card-block">
+							<h5 class="card-title">
+								Amazon
+							</h5>
+							<p class="card-text">
+							Viens dans notre entreprise !
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Consulter</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}
