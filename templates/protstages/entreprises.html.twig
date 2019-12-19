@@ -9,21 +9,7 @@ Prostages
 {% endblock %}
 
 {% block menu %}
-	<div class="row">
-		<div class="col-md-12">
-			<ul class="nav nav-tabs">
-				<li class="nav-item">
-					<a class="nav-link" href="{{path('index')}}">Accueil</a>
-				</li>            
-				<li class="nav-item">
-					<a class="nav-link" href="formations">par formation</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="entreprises">par Entreprise</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+dev
 {% endblock %}
 
 {% block contenu %}
@@ -47,7 +33,24 @@ Prostages
 					</div>
 				</div>
 			</div>
+			<div class="col-md-4">
+					<div class="card mb-3">
+						<img class="card-img-top" style="height: 10rem;" alt="Bootstrap Thumbnail Third" src="Amazon.png" />
+						<div class="card-block">
+							<h5 class="card-title">
+								Amazon
+							</h5>
+							<p class="card-text">
+							Viens dans notre entreprise !
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Consulter</a>
+							</p>
+						</div>
+					</div>
+				</div>
 		</div>
+		
 	</div>
 </div>
 {% endblock %}
