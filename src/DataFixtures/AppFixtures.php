@@ -51,6 +51,29 @@ class AppFixtures extends Fixture
             $manager->persist($formation);
         }
 
+
+
+        // STAGE
+        $typesDeStages = array(
+            // création des types de stages recherchés
+           "Developpeur web Front-End",
+           "Developpeur web Back-End",
+           "Developpeur full-stack",
+           "Administration de base de données",
+           "Programmeur Objet"
+           );
+
+       foreach ($typesDeStages as $titre) {
+           $stage = new Stage(); 
+           $stage->setTitre($titre); //association dutype de stage défini dans la création ci dessus
+           $stage->setDescription($faker->realText($maxNbChars = 150, $indexSize = 2)); // utilisation du faker pour une description aléatoire
+           $stage->setEmail($faker->email()); // génération d'un mail aléatoire
+           $stage->setEntreprise($entreprise); // liens vers l'id de la classe entreprise et affiche son id
+           $stage->addFormation($formation); // liens vers l'id de la classe formation et affiche son id
+           $manager->persist($stage);
+       }
+
+
        
      $manager->flush();     
     }
