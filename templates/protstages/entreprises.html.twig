@@ -1,17 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-Entreprises
-{% endblock %}
-
-{% block titre %}
-Prostages
-{% endblock %}
-
 {% block menu %}
-dev
-{% endblock %}
-
+ </div>
+	    <div class="row">
+		<div class="col-md-12">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Accueil</a>
+				</li>            
+				<li class="nav-item">
+					<a class="nav-link" href="formations">par formation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="entreprises">par Entreprise</a>
+				</li>
+			</ul>
+		</div>
+	    </div>
+{% endblock %}		
 {% block contenu %}
 <div class="container-fluid">
 	<div class="row">
@@ -27,7 +33,7 @@ dev
 							<p class="card-text">
 							Notre entreprise vous propose de ....</p>
 							<p>
-								<a class="btn btn-primary" href="#">Consulter</a>
+								<a class="btn btn-primary" href="stages">Consulter</a>
 							</p>
 						</div>
 					</div>
